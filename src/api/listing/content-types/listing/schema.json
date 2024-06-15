@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "listings",
+  "info": {
+    "singularName": "listing",
+    "pluralName": "listings",
+    "displayName": "listing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "propertyImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "propertyAddress": {
+      "type": "string"
+    },
+    "propertyDesc": {
+      "type": "text"
+    },
+    "beds": {
+      "type": "decimal"
+    },
+    "baths": {
+      "type": "decimal"
+    },
+    "sqft": {
+      "type": "decimal"
+    },
+    "propertyType": {
+      "type": "enumeration",
+      "enum": [
+        "Single family",
+        "Multi family"
+      ]
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "propertyPrice": {
+      "type": "integer"
+    },
+    "occupancy": {
+      "type": "enumeration",
+      "enum": [
+        "Has tenants",
+        "Vacant"
+      ]
+    },
+    "projectedRent": {
+      "type": "integer"
+    },
+    "actualRent": {
+      "type": "integer"
+    },
+    "yearBuilt": {
+      "type": "integer"
+    },
+    "listingStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Available",
+        "Under contract",
+        "Sold"
+      ]
+    }
+  }
+}

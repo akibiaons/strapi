@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buildtorents",
+  "info": {
+    "singularName": "buildtorent",
+    "pluralName": "buildtorents",
+    "displayName": "buildtorent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "propertyImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "propertyAddress": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "beds": {
+      "type": "decimal"
+    },
+    "baths": {
+      "type": "decimal"
+    },
+    "sqft": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "propertyDesc": {
+      "type": "text"
+    },
+    "yearBuilt": {
+      "type": "integer"
+    },
+    "occupancy": {
+      "type": "enumeration",
+      "enum": [
+        "Has Tenants",
+        "Is Available"
+      ]
+    },
+    "propertyStatus": {
+      "type": "enumeration",
+      "enum": [
+        "For sale",
+        "Under contract",
+        "Sold"
+      ]
+    },
+    "actualRent": {
+      "type": "integer"
+    },
+    "targetMonthlyRent": {
+      "type": "integer"
+    },
+    "propertyType": {
+      "type": "enumeration",
+      "enum": [
+        "Single family",
+        "Multi family"
+      ]
+    }
+  }
+}
