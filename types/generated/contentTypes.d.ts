@@ -794,6 +794,7 @@ export interface ApiBuildtorentBuildtorent extends Schema.CollectionType {
     singularName: 'buildtorent';
     pluralName: 'buildtorents';
     displayName: 'buildtorent';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -809,7 +810,7 @@ export interface ApiBuildtorentBuildtorent extends Schema.CollectionType {
     price: Attribute.Integer;
     propertyDesc: Attribute.Text;
     yearBuilt: Attribute.Integer;
-    occupancy: Attribute.Enumeration<['Has Tenants', 'Is Available']>;
+    occupancy: Attribute.Enumeration<['Has tenants', 'No tenants']>;
     propertyStatus: Attribute.Enumeration<
       ['For sale', 'Under contract', 'Sold']
     >;
@@ -840,6 +841,7 @@ export interface ApiListingListing extends Schema.CollectionType {
     singularName: 'listing';
     pluralName: 'listings';
     displayName: 'listing';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -855,7 +857,7 @@ export interface ApiListingListing extends Schema.CollectionType {
     latitude: Attribute.Float;
     longitude: Attribute.Float;
     propertyPrice: Attribute.Integer;
-    occupancy: Attribute.Enumeration<['Has tenants', 'Vacant']>;
+    occupancy: Attribute.Enumeration<['Has tenants', 'No tenants']>;
     projectedRent: Attribute.Integer;
     actualRent: Attribute.Integer;
     yearBuilt: Attribute.Integer;
@@ -886,6 +888,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     singularName: 'project';
     pluralName: 'projects';
     displayName: 'project';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -904,7 +907,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     latitude: Attribute.Float;
     longitude: Attribute.Float;
     propertyDesc: Attribute.Text;
-    occupancy: Attribute.Enumeration<['Has tenants', 'Vacant']>;
+    occupancy: Attribute.Enumeration<['Has tenants', 'No tenants']>;
     listingStatus: Attribute.Enumeration<
       ['Available', 'Under contract', 'Sold']
     >;

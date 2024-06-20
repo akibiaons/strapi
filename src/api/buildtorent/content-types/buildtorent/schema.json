@@ -4,7 +4,8 @@
   "info": {
     "singularName": "buildtorent",
     "pluralName": "buildtorents",
-    "displayName": "buildtorent"
+    "displayName": "buildtorent",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "propertyImg": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "propertyAddress": {
       "type": "string"
@@ -51,8 +53,8 @@
     "occupancy": {
       "type": "enumeration",
       "enum": [
-        "Has Tenants",
-        "Is Available"
+        "Has tenants",
+        "No tenants"
       ]
     },
     "propertyStatus": {
